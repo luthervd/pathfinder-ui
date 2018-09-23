@@ -1,6 +1,7 @@
-# Pathfinder-UI
+# Pathfinder-UI-Auth
 
-Pathfinder-UI is a tool that allows you to visualize and test the routes in an Express application.
+Pathfinder-UI-Auth is a tool that allows you to visualize and test the routes in an Express application. This is forked from smlee/pathfinder-ui but has been modified to add authorization headers. Currently basic auth and openid client credentials flow are availble. Also CDN dependencies will be added as npm packages for offline work.
+
 ### Interactive Tree View
 ![View Routes As Tree](https://s3.amazonaws.com/poly-screenshots.angel.co/Project/4b/154634/8a313313182b2bab4b0e00f483f647b7-original.png)
 
