@@ -1,15 +1,15 @@
 {
   "name": "pathfinder-ui-auth",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "private": false,
   "preferGlobal": false,
   "author": {
-    "name": "Cat, Sang, Ming, Tyler"
+    "name": "luthervd"
   },
   "contributors": [
     {
-      "name": "Cat Lau",
-      "email": "clau.catherine@gmail.com"
+      "name": "Luke McGuinness",
+      "email": "luke.mcg79@gmail.com"
     }
   ],
   "dependencies": {
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smlee/pathfinder-ui.git"
+    "url": "git+https://github.com/luthervd/pathfinder-ui-auth.git"
   },
   "bugs": {
-    "url": "https://github.com/smlee/pathfinder-ui/issues"
+    "url": "https://github.com/luthervd/pathfinder-ui-auth/issues"
   },
   "keywords": [
     "router",
     "path",
-    "postman"
+    "OpenIdConnect"
   ],
   "analyze": true,
   "license": "MIT"
