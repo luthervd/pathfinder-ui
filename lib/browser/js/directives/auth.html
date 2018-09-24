@@ -6,7 +6,7 @@
     </md-input-group>
     <div data-ng-if="authType === 'Basic'">
         <h1>Configure Basic Auth</h1>
-        <form data-ng-submit="setBasic()">
+        <ng-form name="basicAuthForm" id="basicAuthForm">
             <md-input-container>
                 <label>
                     User Name
@@ -19,38 +19,38 @@
                 </label>
                 <input type="text" data-ng-model="basicAuth.password" required />
             </md-input-container>
-            <md-button type="submit">Go</md-button>
+            <md-button type="button" ng-click="setBasic()">Go</md-button>
         </form>
     </div>
     <div data-ng-if="authType === 'OpenId'">
         <h1>Configure OAuth Token</h1>
-        <form data-ng-submit="getToken()" name="authForm">
+        <ng-form name="authForm" id="authForm">
             <md-input-container>
                 <label>
                     Token Service Url
                 </label>
-                <input tpye="text" data-ng-model="tokenUrl" required />
+                <input tpye="text" data-ng-model="oauthOptions.tokenUrl" required />
             </md-input-container>
             <md-input-container>
                 <label>
                     Client Id
                 </label>
-                <input type="text" data-ng-model="clientId" required />
+                <input type="text" data-ng-model="oauthOptions.clientId" required />
             </md-input-container>
             <md-input-container>
                 <label>
                     Client Secret
                 </label>
-                <input type="text" data-ng-model="clientSecret" required />
+                <input type="text" data-ng-model="oauthOptions.clientSecret" required />
             </md-input-container>
             <md-input-container>
                 <label>
                     Audience
                 </label>
-                <input type="text" data-ng-model="audience" required />
+                <input type="text" data-ng-model="oauthOptions.audience" required />
             </md-input-container>
-            <md-button type="submit">Go</md-button>
-        </form>
+            <md-button type="button" ng-click="getToken()">Go</md-button>
+        </ng-form>
     </div>
     <div data-ng-if="message">
         <h5>{{message}}</h5>
